@@ -20,7 +20,7 @@ function Form(props) {
                 <input 
                     type='text'
                     name='name'
-                    value={values.role}
+                    value={values.name}
                     onChange={onInputChange}
                 />
             </label>
@@ -31,7 +31,7 @@ function Form(props) {
                     id='emailInput'
                     type='email'
                     name='email'
-                    value={values.role}
+                    value={values.email}
                     onChange={onInputChange}/>
             </label>
 

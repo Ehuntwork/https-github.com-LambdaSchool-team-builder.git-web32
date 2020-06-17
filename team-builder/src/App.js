@@ -22,7 +22,7 @@ const intialFormValues = {
 function App() {
   const [teamMember, setTeamMember] = useState(intialTeamList);
   const [error, setError] = useState('')
-  
+
   const [formValues , setFormValues] = useState(intialFormValues);
 
   const onInputChange = event =>{
@@ -37,7 +37,7 @@ function App() {
   const onSubmit = event =>{
     event.preventDefault();
 
-    if (!formValues.username || !formValues.email || !formValues.role) {
+    if (!formValues.name || !formValues.email || !formValues.role) {
       setError('You need to fill out all the info')
       return
     }
